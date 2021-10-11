@@ -11,7 +11,7 @@ import {PageEvent} from "@angular/material/paginator";
 })
 export class FoodsComponent implements OnInit {
   foods: Food[] = [];
-  displayedColumns: string[] = ['id', 'name', 'cost'];
+  displayedColumns: string[] = ['id', 'name', 'part', 'cost'];
 
   search?: string;
   pageIndex: number = 0;

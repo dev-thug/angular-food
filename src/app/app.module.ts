@@ -11,13 +11,15 @@ import {FoodsComponent} from './component/food/foods/foods.component';
 import {FoodDetailComponent} from './component/food/food-detail/food-detail.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { FoodUpdateComponent } from './component/food/food-update/food-update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FoodsComponent,
-    FoodDetailComponent
+    FoodDetailComponent,
+    FoodUpdateComponent
   ],
   imports: [
     BrowserModule,

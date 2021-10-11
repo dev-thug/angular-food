@@ -1,0 +1,18 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{food?.name}}</mat-card-title>
+    <mat-card-subtitle><p>종류 : {{food?.part}}</p></mat-card-subtitle>
+    <mat-card-subtitle><p>실습비 : {{food?.cost}} 원</p></mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src={{food?.image}} alt="Photo of a Food">
+  <mat-card-content>
+    <p>
+      {{food?.ingredients}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-button (click)="openDialog()">실습비 수정</button>
+    <button mat-stroked-button color="primary">강의 개설</button>
+  </mat-card-actions>
+
+</mat-card>

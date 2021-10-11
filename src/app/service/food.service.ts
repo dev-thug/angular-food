@@ -15,12 +15,22 @@ export class FoodService {
   ) {
   }
 
-  getSearchFoods(pageIndex: number, pageSize: number, search:string): Observable<any> {
-    return this.http.get<any>(this.foodUrl+"?page="+pageIndex+"&size="+pageSize+"&search="+search);
+  getFood(id: number): Observable<Food> {
+    return this.http.get<any>(this.foodUrl + "/" + id);
+  }
+
+  getSearchFoods(pageIndex: number, pageSize: number, search: string): Observable<any> {
+    return this.http.get<any>(this.foodUrl + "?page=" + pageIndex + "&size=" + pageSize + "&search=" + search);
   }
 
   getFoods(pageIndex: number, pageSize: number): Observable<any> {
-    return this.http.get<any>(this.foodUrl+"?page="+pageIndex+"&size="+pageSize);
+    return this.http.get<any>(this.foodUrl + "?page=" + pageIndex + "&size=" + pageSize);
+  }
+
+  updateFood(id: number, cost: number): Observable<Food> {
+    const params = new FormData();
+    params.append("cost", cost.toString());
+    return this.http.put<Food>(this.foodUrl+"/"+id, params);
   }
 
 }

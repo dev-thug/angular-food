@@ -6,22 +6,25 @@
 
 <table mat-table [dataSource]="foods" class="mat-elevation-z8">
 
-  <!-- Position Column -->
+
   <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef> No.</th>
-    <td mat-cell *matCellDef="let element" > {{element.id}} </td>
+    <th mat-header-cell *matHeaderCellDef> 음식 번호</th>
+    <td mat-cell *matCellDef="let element" [routerLink]="['/food',element.id]"> {{element.id}} </td>
   </ng-container>
 
-  <!-- Name Column -->
   <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name</th>
-    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    <th mat-header-cell *matHeaderCellDef> 음식명 </th>
+    <td mat-cell *matCellDef="let element" [routerLink]="['/food',element.id]"> {{element.name}} </td>
   </ng-container>
 
-  <!-- Weight Column -->
+  <ng-container matColumnDef="part">
+    <th mat-header-cell *matHeaderCellDef> 분류 </th>
+    <td mat-cell *matCellDef="let element" [routerLink]="['/food',element.id]"> {{element.part}} </td>
+  </ng-container>
+
   <ng-container matColumnDef="cost">
-    <th mat-header-cell *matHeaderCellDef> Cost</th>
-    <td mat-cell *matCellDef="let element"> {{element.cost}} </td>
+    <th mat-header-cell *matHeaderCellDef> 실습비</th>
+    <td mat-cell *matCellDef="let element" [routerLink]="['/food',element.id]"> {{element.cost}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
