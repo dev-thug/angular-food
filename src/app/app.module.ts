@@ -5,20 +5,32 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MaterialModule} from "./modules/material/material.module";
 import {FlexLayoutModule} from "@angular/flex-layout";
-import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './component/home.component';
+import {AppRoutingModule} from './app-routing.module';
+import {HomeComponent} from './component/home.component';
+import {FoodsComponent} from './component/food/foods/foods.component';
+import {FoodDetailComponent} from './component/food/food-detail/food-detail.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FoodsComponent,
+    FoodDetailComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
+  ],
+  exports: [
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

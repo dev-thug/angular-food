@@ -1,0 +1,26 @@
+import {Injectable} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
+import {Food} from "../model/food";
+
+@Injectable({
+  providedIn: 'root'
+})
+export class FoodService {
+
+  private foodUrl = "/api/food";
+
+  constructor(
+    private http: HttpClient
+  ) {
+  }
+
+  getSearchFoods(pageIndex: number, pageSize: number, search:string): Observable<any> {
+    return this.http.get<any>(this.foodUrl+"?page="+pageIndex+"&size="+pageSize+"&search="+search);
+  }
+
+  getFoods(pageIndex: number, pageSize: number): Observable<any> {
+    return this.http.get<any>(this.foodUrl+"?page="+pageIndex+"&size="+pageSize);
+  }
+
+}

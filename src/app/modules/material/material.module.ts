@@ -10,6 +10,8 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatListModule} from "@angular/material/list";
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatSliderModule} from "@angular/material/slider";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import {MatSliderModule} from "@angular/material/slider";
     MatIconModule,
     MatListModule,
     MatDialogModule,
-    MatSliderModule
+    MatSliderModule,
+    MatPaginatorModule,
+    MatExpansionModule
   ],
   exports: [
     MatCardModule,
@@ -37,7 +41,10 @@ import {MatSliderModule} from "@angular/material/slider";
     MatIconModule,
     MatListModule,
     MatDialogModule,
-    MatSliderModule]
+    MatSliderModule,
+    MatPaginatorModule,
+    MatExpansionModule
+  ]
 })
 export class MaterialModule {
 }
