@@ -11,7 +11,9 @@ import {FoodsComponent} from './component/food/foods/foods.component';
 import {FoodDetailComponent} from './component/food/food-detail/food-detail.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import { FoodUpdateComponent } from './component/food/food-update/food-update.component';
+import {FoodUpdateComponent} from './component/food/food-update/food-update.component';
+import {SigninComponent} from './component/user/signin/signin.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { FoodUpdateComponent } from './component/food/food-update/food-update.co
     HomeComponent,
     FoodsComponent,
     FoodDetailComponent,
-    FoodUpdateComponent
+    FoodUpdateComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
