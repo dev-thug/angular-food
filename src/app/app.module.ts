@@ -13,6 +13,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {FoodUpdateComponent} from './component/food/food-update/food-update.component';
 import {SigninComponent} from './component/user/signin/signin.component';
+import { ButtonsComponent } from './material-component/buttons/buttons.component';
+import { ChipsComponent } from './material-component/chips/chips.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import {SigninComponent} from './component/user/signin/signin.component';
     FoodsComponent,
     FoodDetailComponent,
     FoodUpdateComponent,
-    SigninComponent
+    SigninComponent,
+    ButtonsComponent,
+    ChipsComponent
   ],
   imports: [
     BrowserModule,

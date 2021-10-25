@@ -12,6 +12,9 @@ import {MatDialogModule} from "@angular/material/dialog";
 import {MatSliderModule} from "@angular/material/slider";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatExpansionModule} from "@angular/material/expansion";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatMenuModule} from "@angular/material/menu";
+import {MatChipsModule} from "@angular/material/chips";
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import {MatExpansionModule} from "@angular/material/expansion";
     MatDialogModule,
     MatSliderModule,
     MatPaginatorModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatButtonToggleModule,
+    MatMenuModule,
+    MatChipsModule
   ],
   exports: [
     MatCardModule,
@@ -43,7 +49,10 @@ import {MatExpansionModule} from "@angular/material/expansion";
     MatDialogModule,
     MatSliderModule,
     MatPaginatorModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatButtonToggleModule,
+    MatMenuModule,
+    MatChipsModule
   ]
 })
 export class MaterialModule {
