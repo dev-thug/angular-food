@@ -1,11 +1,12 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
-import {HomeComponent} from "./component/home.component";
-import {FoodDetailComponent} from "./component/food/food-detail/food-detail.component";
-import {FoodsComponent} from "./component/food/foods/foods.component";
-import {SigninComponent} from "./component/user/signin/signin.component";
-import {ButtonsComponent} from "./material-component/buttons/buttons.component";
-import {ChipsComponent} from "./material-component/chips/chips.component";
+import {HomeComponent} from "./layout/component/home.component";
+import {FoodDetailComponent} from "./layout/component/food/food-detail/food-detail.component";
+import {FoodsComponent} from "./layout/component/food/foods/foods.component";
+import {SigninComponent} from "./layout/component/user/signin/signin.component";
+import {FullComponent} from "./layout/full/full.component";
+import {LoginComponent} from "./pages/authentication/login/login.component";
+
 
 
 const routes: Routes = [
@@ -14,10 +15,9 @@ const routes: Routes = [
   {path: 'food/:foodId', component: FoodDetailComponent},
   {path: 'signin', component: SigninComponent},
 
-//  For Test
-  {path: 'buttons', component: ButtonsComponent},
-  {path: 'chips', component: ChipsComponent}
-
+  // layout
+  {path: 'full', component: FullComponent},
+  {path: 'login', component: LoginComponent}
 ];
 
 

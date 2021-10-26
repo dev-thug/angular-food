@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {Food} from "../../../model/food";
-import {FoodService} from "../../../service/food.service";
+import {Food} from "../../../../model/food";
+import {FoodService} from "../../../../service/food.service";
 import {MatDialog} from "@angular/material/dialog";
 import {FoodUpdateComponent} from "../food-update/food-update.component";
 

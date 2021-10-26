@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Food} from "../../../model/food";
-import {FoodService} from "../../../service/food.service";
+import {Food} from "../../../../model/food";
+import {FoodService} from "../../../../service/food.service";
 import {MatTableDataSource} from "@angular/material/table";
 import {PageEvent} from "@angular/material/paginator";
 
