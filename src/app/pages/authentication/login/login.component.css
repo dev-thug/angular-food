@@ -1,0 +1,57 @@
+.login {
+  height: 100%;
+}
+
+.login-form-wrapper {
+  flex: 1 0 auto;
+  padding: 32px;
+
+}
+
+.login-form {
+  width: 384px;
+  max-width: 384px;
+  padding: 32px;
+  text-align: center;
+}
+
+
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 16px 0 0 0;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.remember-forgot-password {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.remember-me {
+  margin-bottom: 16px
+}
+
+.forgot-password {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px
+}
+
+.register {
+  margin: 32px auto 24px auto;
+  font-weight: 600;
+}
+
+.text {
+  margin-right: 8px;
+}
+
+button {
+  width: 200px;
+  border-radius: 20px;
+  font-size: 20px;
+}
