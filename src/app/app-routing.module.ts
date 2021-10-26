@@ -10,10 +10,10 @@ import {RegisterComponent} from "./pages/authentication/register/register.compon
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'foods', component: FoodsComponent},
+  // {path: '', component: HomeComponent},
+  {path: '', component: FoodsComponent},
   {path: 'food/:foodId', component: FoodDetailComponent},
-  {path: 'signin', component: SigninComponent},
+
 
   // layout
   {path: 'full', component: FullComponent},
