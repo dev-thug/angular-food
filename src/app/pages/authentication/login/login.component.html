@@ -4,7 +4,7 @@
     <div class="title">로그인</div>
     <div class="register" fxLayout="column" fxLayoutAlign="center center">
       <span class="text">계정이 없으신가요?
-        <a class="link" [routerLink]="'/pages/auth/register'">
+        <a class="link" [routerLink]="'/register'">
         가입하기
         </a>
       </span>
@@ -52,7 +52,7 @@
           </a>
         </div>
         <div >
-          <button mat-raised-button color="accent">Login</button>
+          <button mat-raised-button color="accent" [disabled]="loginForm.invalid">로그인</button>
         </div>
       </form>
     </mat-card-content>

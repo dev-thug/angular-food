@@ -6,7 +6,7 @@ import {FoodsComponent} from "./layout/component/food/foods/foods.component";
 import {SigninComponent} from "./layout/component/user/signin/signin.component";
 import {FullComponent} from "./layout/full/full.component";
 import {LoginComponent} from "./pages/authentication/login/login.component";
-
+import {RegisterComponent} from "./pages/authentication/register/register.component";
 
 
 const routes: Routes = [
@@ -17,7 +17,8 @@ const routes: Routes = [
 
   // layout
   {path: 'full', component: FullComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent}
 ];
 
 

@@ -17,6 +17,7 @@ import { HeaderComponent } from './layout/full/header/header.component';
 import { FullComponent } from './layout/full/full.component';
 import { NavbarComponent } from './layout/full/navbar/navbar.component';
 import { LoginComponent } from './pages/authentication/login/login.component';
+import { RegisterComponent } from './pages/authentication/register/register.component';
 
 
 
@@ -31,7 +32,8 @@ import { LoginComponent } from './pages/authentication/login/login.component';
     HeaderComponent,
     FullComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
