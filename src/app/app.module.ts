@@ -12,13 +12,15 @@ import {FoodDetailComponent} from './layout/component/food/food-detail/food-deta
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {FoodUpdateComponent} from './layout/component/food/food-update/food-update.component';
-import {SigninComponent} from './layout/component/user/signin/signin.component';
 import { HeaderComponent } from './layout/full/header/header.component';
 import { FullComponent } from './layout/full/full.component';
 import { NavbarComponent } from './layout/full/navbar/navbar.component';
 import { LoginComponent } from './pages/authentication/login/login.component';
 import { RegisterComponent } from './pages/authentication/register/register.component';
 import { MenuComponent } from './layout/full/navbar/menu/menu.component';
+import { ApplicationDetailComponent } from './layout/component/application/application-detail/application-detail.component';
+import { ApplicationComponent } from './layout/component/application/application.component';
+
 
 
 
@@ -29,13 +31,14 @@ import { MenuComponent } from './layout/full/navbar/menu/menu.component';
     FoodsComponent,
     FoodDetailComponent,
     FoodUpdateComponent,
-    SigninComponent,
     HeaderComponent,
     FullComponent,
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
-    MenuComponent
+    MenuComponent,
+    ApplicationDetailComponent,
+    ApplicationComponent
   ],
   imports: [
     BrowserModule,

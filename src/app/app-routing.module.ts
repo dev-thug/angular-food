@@ -1,9 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
-import {HomeComponent} from "./layout/component/home.component";
 import {FoodDetailComponent} from "./layout/component/food/food-detail/food-detail.component";
 import {FoodsComponent} from "./layout/component/food/foods/foods.component";
-import {SigninComponent} from "./layout/component/user/signin/signin.component";
 import {FullComponent} from "./layout/full/full.component";
 import {LoginComponent} from "./pages/authentication/login/login.component";
 import {RegisterComponent} from "./pages/authentication/register/register.component";
