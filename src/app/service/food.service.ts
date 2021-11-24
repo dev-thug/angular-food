@@ -30,7 +30,7 @@ export class FoodService {
   updateFood(id: number, cost: number): Observable<Food> {
     const params = new FormData();
     params.append("cost", cost.toString());
-    return this.http.put<Food>(this.foodUrl+"/"+id, params);
+    return this.http.put<Food>(this.foodUrl + "/" + id, params);
   }
 
 }
